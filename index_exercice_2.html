@@ -3,12 +3,12 @@
      <head>
         <meta charset="utf-8" />
         <style>
-            .titre 
+            #titre 
             {
                 font-weight: bold;
                 text-align: center;
             }
-            .rouge
+            .rouge 
             {
                 color: red;
             }
@@ -25,11 +25,13 @@
        
     </head>
     <body>
-        <p class="titre"> Citizen Kane</p>            
-        <p> <span class="rouge"> Kane </span>, favori pour le poste de gouverneur, tient son discours de campagne. 
+        <p id="titre"> Citizen Kane</p>  <!-- ici on n'utilise pas le span car il s'agit du paragraphe entier et on a également besoin de le centrer , ce qu'on
+        ne peut pas faire avec des mots, on utilise l'attribut id car on ne l'utilisera qu'une fois-->          
+        <p> <span class="rouge"> Kane </span>, <!-- span est une balise permet d'isoler un mot, class="mettreUnNom" 
+            est un attribut qui permet d'associer ce mot à une catégorie-->favori pour le poste de gouverneur, tient son discours de campagne. 
         Au début des années 1940, <span class="rouge">Charles Foster Kane</span> meurt dans son manoir de <span class="vert">Xanadu</span> ,
          un vaste domaine palatial de <span class="vert">Floride</span>, en prononçant dans
-          un dernier souffle <span class="italic">rosebud</span>.
+          un dernier souffle <span class="italic">rosebud</span>. <!-- même principe pour les span class italic et vert-->
      </p>
          
     </body>
